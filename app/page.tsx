@@ -93,22 +93,22 @@ const SERVICES = [
 
 export default function LeftclickStyle() {
   const year = useMemo(() => new Date().getFullYear(), []);
-  const [heroRef, isHeroIntersecting] = useIntersectionObserver({
+  const [heroRef, isHeroIntersecting] = useIntersectionObserver<HTMLElement>({
     threshold: 0.3,
   });
-  const [logosRef, isLogosIntersecting] = useIntersectionObserver({
+  const [logosRef, isLogosIntersecting] = useIntersectionObserver<HTMLDivElement>({
     threshold: 0.3,
   });
-  const [servicesRef, isServicesIntersecting] = useIntersectionObserver({
+  const [servicesRef, isServicesIntersecting] = useIntersectionObserver<HTMLElement>({
     threshold: 0.3,
   });
-  const [workRef, isWorkIntersecting] = useIntersectionObserver({
+  const [workRef, isWorkIntersecting] = useIntersectionObserver<HTMLElement>({
     threshold: 0.3,
   });
-  const [processRef, isProcessIntersecting] = useIntersectionObserver({
+  const [processRef, isProcessIntersecting] = useIntersectionObserver<HTMLElement>({
     threshold: 0.3,
   });
-  const [ctaRef, isCtaIntersecting] = useIntersectionObserver({
+  const [ctaRef, isCtaIntersecting] = useIntersectionObserver<HTMLElement>({
     threshold: 0.3,
   });
 
